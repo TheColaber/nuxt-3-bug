@@ -8,8 +8,9 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  async setup() {
-    console.log(await $fetch("/api/data"));
+  async mounted() {
+    console.log(await $fetch("/api/path"));
+    console.log(await $fetch("/api/path/index"));
   },
 });
 </script>
